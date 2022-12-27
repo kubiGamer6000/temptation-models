@@ -71,7 +71,6 @@ body {
   justify-content: center;
   @include for-phone-only {
     transform: skewY(-7deg);
-    min-height: 90vh;
   }
   @include tablet {
     min-height: 70vh;
@@ -92,17 +91,10 @@ body {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      @include for-phone-only {
-        height: 45vh;
-      }
-      height: 47.5vh;
       .flex-wrapper {
-        height: 100%;
         @include for-phone-only {
-          height: 70%;
         }
         @include tablet {
-          height: 80%;
         }
         display: flex;
         flex-direction: column;
@@ -117,8 +109,11 @@ body {
           -webkit-text-fill-color: transparent;
           letter-spacing: 0.4rem;
           line-height: 0.9;
+          margin-bottom: 4rem;
           @include for-phone-only {
             font-size: 2.2rem;
+            margin-top: 2.5rem;
+            margin-bottom: 3rem;
           }
           @include tablet {
             font-size: 3.5rem;
@@ -136,19 +131,21 @@ body {
         }
         h2 {
           font-size: 2.6rem;
+          margin-bottom: 1rem;
+          font-weight: 700;
           @include for-phone-only {
             font-size: 2rem;
-            font-weight: 500;
+            font-weight: 600;
           }
           @include tablet {
             font-size: 2.2rem;
             max-width: 45vw;
           }
           max-width: 85vw;
-          font-weight: 700;
         }
         h3 {
           line-height: 3;
+          font-size: 1.3rem;
           font-weight: 400;
         }
       }
@@ -486,7 +483,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 125vh;
+  padding: 40px 0;
   @include for-phone-only {
     transform: skewY(-7deg);
   }
@@ -498,11 +495,14 @@ body {
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
-    height: 90%;
     min-width: 70%;
     transform: skewY(3deg);
     h1 {
       font-size: 3.5rem;
+      max-width: 80%;
+      text-align: center;
+      margin-top: 3.5rem;
+      margin-bottom: 2.5rem;
       background: -webkit-linear-gradient(225deg, #eeaced, #fc67fa);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -512,7 +512,6 @@ body {
       flex-direction: column;
       align-items: center;
       justify-content: space-between;
-      height: 77.5%;
       width: 100%;
       textarea,
       input {
@@ -521,6 +520,7 @@ body {
         border-radius: 35px;
         font-family: "Raleway", sans-serif;
         padding: 1.5rem 1.2rem;
+        margin: 1rem 0;
         font-size: 1.1rem;
         width: 85%;
         resize: none;
@@ -542,6 +542,7 @@ body {
         font-weight: bold;
         padding: 1.25rem 2.8rem;
         margin-top: 1.2rem;
+        margin-bottom: 2.5rem;
         border: none;
         border-radius: 25px;
         cursor: pointer;

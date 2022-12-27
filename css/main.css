@@ -27,7 +27,6 @@ body {
 @media (min-width: 371px) and (max-width: 500px) {
   #hero {
     transform: skewY(-7deg);
-    min-height: 90vh;
   }
 }
 @media (min-width: 951px) and (max-width: 1500px) {
@@ -54,30 +53,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 47.5vh;
-}
-@media (min-width: 371px) and (max-width: 500px) {
-  #hero .content-wrapper .textbox {
-    height: 45vh;
-  }
 }
 #hero .content-wrapper .textbox .flex-wrapper {
-  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   text-align: center;
-}
-@media (min-width: 371px) and (max-width: 500px) {
-  #hero .content-wrapper .textbox .flex-wrapper {
-    height: 70%;
-  }
-}
-@media (min-width: 951px) and (max-width: 1500px) {
-  #hero .content-wrapper .textbox .flex-wrapper {
-    height: 80%;
-  }
 }
 #hero .content-wrapper .textbox .flex-wrapper h1 {
   font-family: "Snasm" !important;
@@ -87,10 +69,13 @@ body {
   -webkit-text-fill-color: transparent;
   letter-spacing: 0.4rem;
   line-height: 0.9;
+  margin-bottom: 4rem;
 }
 @media (min-width: 371px) and (max-width: 500px) {
   #hero .content-wrapper .textbox .flex-wrapper h1 {
     font-size: 2.2rem;
+    margin-top: 2.5rem;
+    margin-bottom: 3rem;
   }
 }
 @media (min-width: 951px) and (max-width: 1500px) {
@@ -114,13 +99,14 @@ body {
 }
 #hero .content-wrapper .textbox .flex-wrapper h2 {
   font-size: 2.6rem;
-  max-width: 85vw;
+  margin-bottom: 1rem;
   font-weight: 700;
+  max-width: 85vw;
 }
 @media (min-width: 371px) and (max-width: 500px) {
   #hero .content-wrapper .textbox .flex-wrapper h2 {
     font-size: 2rem;
-    font-weight: 500;
+    font-weight: 600;
   }
 }
 @media (min-width: 951px) and (max-width: 1500px) {
@@ -131,6 +117,7 @@ body {
 }
 #hero .content-wrapper .textbox .flex-wrapper h3 {
   line-height: 3;
+  font-size: 1.3rem;
   font-weight: 400;
 }
 #hero .content-wrapper .picture {
@@ -487,7 +474,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 125vh;
+  padding: 40px 0;
 }
 @media (min-width: 371px) and (max-width: 500px) {
   #form {
@@ -499,7 +486,6 @@ body {
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
-  height: 90%;
   min-width: 70%;
   transform: skewY(3deg);
 }
@@ -510,6 +496,10 @@ body {
 }
 #form .content-wrapper h1 {
   font-size: 3.5rem;
+  max-width: 80%;
+  text-align: center;
+  margin-top: 3.5rem;
+  margin-bottom: 2.5rem;
   background: -webkit-linear-gradient(225deg, #eeaced, #fc67fa);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -519,7 +509,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height: 77.5%;
   width: 100%;
 }
 #form .content-wrapper form textarea,
@@ -529,6 +518,7 @@ body {
   border-radius: 35px;
   font-family: "Raleway", sans-serif;
   padding: 1.5rem 1.2rem;
+  margin: 1rem 0;
   font-size: 1.1rem;
   width: 85%;
   resize: none;
@@ -557,6 +547,7 @@ body {
   font-weight: bold;
   padding: 1.25rem 2.8rem;
   margin-top: 1.2rem;
+  margin-bottom: 2.5rem;
   border: none;
   border-radius: 25px;
   cursor: pointer;
