@@ -49,6 +49,11 @@ body {
     transform: skewY(7deg);
   }
 }
+@media (min-width: 501px) and (max-width: 950px) {
+  #hero .content-wrapper {
+    flex-direction: column;
+  }
+}
 #hero .content-wrapper .textbox {
   display: flex;
   align-items: center;
@@ -76,6 +81,11 @@ body {
     font-size: 2.2rem;
     margin-top: 2.5rem;
     margin-bottom: 3rem;
+  }
+}
+@media (min-width: 501px) and (max-width: 950px) {
+  #hero .content-wrapper .textbox .flex-wrapper h1 {
+    margin-top: 3rem;
   }
 }
 @media (min-width: 951px) and (max-width: 1500px) {
@@ -130,7 +140,7 @@ body {
   #hero .content-wrapper .picture img {
     max-height: 40vh;
     margin-top: 2.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
   }
 }
 @media (min-width: 951px) and (max-width: 1500px) {
@@ -140,7 +150,6 @@ body {
 }
 
 #about {
-  min-height: 100vh;
   background-color: white;
   transform: skewY(-3deg);
   padding: 1.97vw 0;
@@ -160,7 +169,7 @@ body {
   justify-content: space-around;
   min-width: 75vw;
   height: 100%;
-  margin: 0 auto;
+  margin: 5rem auto;
   transform: skewY(3deg);
 }
 @media (min-width: 371px) and (max-width: 500px) {
@@ -168,6 +177,11 @@ body {
     transform: skewY(7deg);
     flex-direction: column;
     max-width: 85vw;
+  }
+}
+@media (min-width: 501px) and (max-width: 950px) {
+  #about .content-wrapper {
+    min-width: 85vw;
   }
 }
 #about .content-wrapper .picture {
@@ -179,7 +193,7 @@ body {
 #about .content-wrapper .picture img {
   border-bottom-left-radius: 60px;
   border-top-right-radius: 60px;
-  max-height: 65vh;
+  max-height: 60vh;
 }
 @media (min-width: 371px) and (max-width: 500px) {
   #about .content-wrapper .picture img {
@@ -187,10 +201,19 @@ body {
     margin-bottom: 5vh;
   }
 }
+@media (min-width: 951px) and (max-width: 1500px) {
+  #about .content-wrapper .picture img {
+    max-height: 65vh;
+    -o-object-fit: none;
+       object-fit: none;
+    -o-object-position: 35% 0%;
+       object-position: 35% 0%;
+    aspect-ratio: 2/3;
+  }
+}
 #about .content-wrapper .textbox {
   display: flex;
   max-width: 30vw;
-  min-height: 60%;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
@@ -201,6 +224,11 @@ body {
     min-height: 50vh;
     align-items: center;
     text-align: center;
+  }
+}
+@media (min-width: 951px) and (max-width: 1500px) {
+  #about .content-wrapper .textbox {
+    max-width: 40vw;
   }
 }
 #about .content-wrapper .textbox .p-wrapper {
@@ -214,6 +242,11 @@ body {
 }
 #about .content-wrapper .textbox h1 {
   font-size: 2.8rem;
+}
+@media (min-width: 951px) and (max-width: 1500px) {
+  #about .content-wrapper .textbox h1 {
+    font-size: 2.2rem;
+  }
 }
 #about .content-wrapper .textbox button {
   background: linear-gradient(225deg, #eeaced, #fc67fa);
